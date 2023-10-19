@@ -13,7 +13,7 @@ function calculator(operator = '') {
     if (!numberOne || !numberTwo) {
         alert('Vui lòng nhập đủ 2 số');
     }
-
+    
     let result;
     switch (operator) {
         case '+':
@@ -29,7 +29,7 @@ function calculator(operator = '') {
             result = numberOne / numberTwo;
             break;
     }
-    elResult.innerText = result;
+    elResult.innerText = "Result: " + result;
 }
 
 elBtnSum.addEventListener('click', function () {
