@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Todo App</h1>
+    <div>
+        <h2>Tìm kiếm</h2>
+        <form action="">
+            <input type="text" id="input-search">
+            <button type="button" id="btnSearch">Search</button>
+        </form>
+    </div>
+    <div>
+        <h2>Form</h2>
+        <form action="" id="todo-form">
+            <input type="text" id="inputSave">
+            <select name="" id="level">
+                <option value="1">Dễ</option>
+                <option value="2">Vừa</option>
+                <option value="3">Khó</option>
+            </select>
+            <button type="submit" id="btnSave">Save</button>
+        </form>
+    </div>
+    <div>
+        <h2>Danh sách</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Level</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="list">
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
