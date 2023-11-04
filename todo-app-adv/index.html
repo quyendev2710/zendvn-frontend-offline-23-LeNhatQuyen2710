@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <h1>Todo App</h1>
     <div>
@@ -27,12 +30,36 @@
         </form>
     </div>
     <div>
+        <h2>Sắp xếp</h2>
+        <button id="increaseName">Tăng dần theo tên</button>
+        <button id="decreaseName">Giảm dần theo tên</button>
+        <button id="increaseLevel">Tăng dần theo level</button>
+        <button id="decreaseLevel">Giảm dần theo level</button>
+    </div>
+
+    <div>
+        <h2>Lọc</h2>
+        <label for="">Theo trạng thái</label>
+        <select id="statusFilter">
+            <option value="all">Tất cả</option>
+            <option value="1">Đã hoàn thành</option>
+            <option value="0">Chưa hoàn thành</option>
+        </select>
+        <label for="">Theo level</label>
+        <select id="levelFilter">
+            <option value="all">Tất cả</option>
+            <option value="1">Dễ</option>
+            <option value="2">Vừa</option>
+            <option value="3">Khó</option>
+        </select>
+    </div>
+
+    <div>
         <h2>Danh sách</h2>
         <table border="1">
             <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Status</th>
                     <th>Level</th>
                     <th>Action</th>
                 </tr>
@@ -43,4 +70,5 @@
     </div>
     <script src="main.js"></script>
 </body>
+
 </html>
