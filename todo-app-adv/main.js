@@ -99,9 +99,7 @@ elTodoForm.addEventListener('submit', function (e) {
 elBtnSearch.addEventListener('click', function () {
     let valueSearch = elInputSearch.value;
     console.log(valueSearch);
-    let searchList = todos.filter((item) => {
-        return item.name.toLowerCase().includes(valueSearch.toLowerCase());
-    });
+    let searchList = todos.filter(item => item.name.toLowerCase().includes(valueSearch.toLowerCase()));
     renderTodoList(searchList);
 });
 
